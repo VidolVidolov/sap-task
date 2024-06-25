@@ -1,0 +1,37 @@
+.about-me {
+  text-decoration: underline;
+}
+.crossed {
+  text-decoration: line-through;
+}
+
+.useless-info {
+  max-width: 20%;
+  padding-right: 2rem;
+  border-right: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.star-wars-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.text-area-star-wars {
+  height: 40%;
+}
+
+.submit-button {
+  width: 10rem;
+}
+
+.name-of-attribute {
+  color: red;
+}
+
+.label-for-response {
+  margin-top: 1rem;
+}

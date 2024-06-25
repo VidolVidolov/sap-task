@@ -1,0 +1,17 @@
+#root {
+  display: flex;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.side-navigation {
+  height: 100%;
+  margin-right: 2rem;
+}
+
+.inner-page-wrapper {
+  margin-top: 2rem;
+  border: 1px solid black;
+  padding: 1rem;
+  display: flex;
+  gap: 3rem;
+}
