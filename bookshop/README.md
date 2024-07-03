@@ -1,25 +1,31 @@
-# Getting Started
+# Bookshop Getting Started Sample
 
-Welcome to your new project.
+This stand-alone sample introduces the essential tasks in the development of CAP-based services as also covered in the [Getting Started guide in capire](https://cap.cloud.sap/docs/get-started/in-a-nutshell).
 
-It contains these folders and files, following our recommended project layout:
+## Hypothetical Use Cases
 
-File or Folder | Purpose
----------|----------
-`app/` | content for UI frontends goes here
-`db/` | your domain models and data go here
-`srv/` | your service models and code go here
-`package.json` | project metadata and configuration
-`readme.md` | this getting started guide
+1. Build a service that allows to browse _Books_ and _Authors_.
+2. Books have assigned _Genres_, which are organized hierarchically.
+3. All users may browse books without login.
+4. All entries are maintained by Administrators.
+5. End users may order books (the actual order mgmt being out of scope).
 
+## Running the Sample
 
-## Next Steps
+```sh
+npm run watch
+```
 
-- Open a new terminal and run `cds watch`
-- (in VS Code simply choose _**Terminal** > Run Task > cds watch_)
-- Start adding content, for example, a [db/schema.cds](db/schema.cds).
+## Content & Best Practices
 
-
-## Learn More
-
-Learn more at https://cap.cloud.sap/docs/get-started/.
+| Links to capire                                                                                           | Sample files / folders               |
+| --------------------------------------------------------------------------------------------------------- | ------------------------------------ |
+| [Project Setup & Layouts](https://cap.cloud.sap/docs/get-started/jumpstart#project-structure)             | [`./`](./)                           |
+| [Domain Modeling with CDS](https://cap.cloud.sap/docs/guides/domain-modeling)                               | [`./db/schema.cds`](./db/schema.cds) |
+| [Defining Services](https://cap.cloud.sap/docs/guides/providing-services#modeling-services)               | [`./srv/*.cds`](./srv)               |
+| [Single-purposed Services](https://cap.cloud.sap/docs/guides/providing-services#single-purposed-services) | [`./srv/*.cds`](./srv)               |
+| [Providing & Consuming Providers](https://cap.cloud.sap/docs/guides/providing-services)                   | http://localhost:4004                |
+| [Using Databases](https://cap.cloud.sap/docs/guides/databases)                                            | [`./db/data/*.csv`](./db/data)       |
+| [Adding Custom Logic](https://cap.cloud.sap/docs/guides/providing-services#adding-custom-logic)           | [`./srv/*.js`](./srv)                |
+| Adding Tests                                                                                              | [`./test`](./test)                   |
+| [Sharing for Reuse](https://cap.cloud.sap/docs/guides/extensibility/composition)                          | [`./index.cds`](./index.cds)         |

@@ -1,0 +1,88 @@
+.book-container {
+  display: flex;
+  flex-direction: row;
+  background: white;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  overflow: hidden;
+  max-width: 80rem;
+  margin: 2rem;
+}
+
+.book-image img {
+  width: 20rem;
+  height: auto;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.book-details {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.book-details h2 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 2rem;
+}
+
+.book-author {
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+.book-descr {
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+.book-meta p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+  color: #95a5a6;
+}
+
+.book-meta p:last-child {
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.order-form {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.order-form label {
+  margin-right: 1rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.order-form select {
+  margin-right: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #ccc;
+}
+
+.order-button {
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  color: white;
+  background-color: #27ae60;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.order-button:hover {
+  background-color: #218c4b;
+}

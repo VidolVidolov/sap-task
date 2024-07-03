@@ -1,0 +1,12 @@
+.navigation-link-item {
+  padding-left: 1rem;
+  text-decoration: none;
+  color: unset;
+  width: 93%;
+  display: flex;
+  border-radius: 0.3rem;
+}
+
+.navigation-link-item:hover {
+  background-color: #ebf8ff;
+}

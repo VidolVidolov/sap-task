@@ -1,0 +1,25 @@
+.book-card:hover {
+  background-color: red;
+}
+
+.book-card-contnet {
+  padding: 0 2rem 2rem 2rem;
+}
+
+.card-list-item {
+  margin-top: 0.5rem;
+  text-decoration: underline;
+}
+
+.info-list {
+  margin-bottom: 1rem;
+}
+
+.details-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.details-button > button {
+  cursor: pointer;
+}

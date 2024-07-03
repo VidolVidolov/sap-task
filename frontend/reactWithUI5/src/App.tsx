@@ -1,35 +1,26 @@
-import {
-  SideNavigation,
-  SideNavigationItem,
-  ThemeProvider,
-} from "@ui5/webcomponents-react";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-
-import { Home } from "./pages/Home/Home";
-import { AboutMe } from "./pages/AboutMe/AboutMe";
 import "@ui5/webcomponents-icons/dist/AllIcons.js";
-
 import "./App.css";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/about-me",
-    element: <AboutMe />,
-  },
-]);
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import { Authors } from "./pages/Authors/Authors";
+import { BookDetails } from "./pages/BookDetails/BookDetails";
+import { Home } from "./pages/Home/Home";
+import { Navigation } from "./components/Navigation/Navigation";
+import { ThemeProvider } from "@ui5/webcomponents-react";
 
 function App() {
   return (
     <ThemeProvider>
-      <SideNavigation className="side-navigation">
-        <SideNavigationItem icon="home" text="Home" href="/" />
-        <SideNavigationItem icon="account" text="About me" href="/about-me" />
-      </SideNavigation>
-      <RouterProvider router={router} />
+      <BrowserRouter>
+        <Routes>
+          <Route element={<Navigation />}>
+            <Route path="/" element={<Home />} />
+            <Route path="details" element={<BookDetails />} />
+            <Route path="authors" element={<Authors />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }
